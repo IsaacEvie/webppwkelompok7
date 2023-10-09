@@ -1,0 +1,158 @@
+/* General styles */
+body {
+  background: black; /* Set background color to black */
+  color: #ffffff; /* Set text color to white */
+}
+
+/* Primary button style */
+.btn-primary {
+  background-color: #ff3eff; /* Set button background color */
+  color: #fff; /* Set button text color to white */
+  border: none; /* Remove button border */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add button hover effect */
+}
+
+/* Hover effect for primary button */
+.btn-primary:hover {
+  background-color: #9c0376; /* Change background color on hover */
+  color: #000; /* Change text color on hover */
+}
+
+/* Navigation links as buttons */
+.nav-item a.nav-link {
+  background: transparent; /* Set background to transparent */
+  background-size: 400% 400%; /* Add animated gradient background */
+  animation: gradient 15s ease infinite; /* Apply background animation */
+}
+
+/* Hover effect for navigation links */
+.nav-item a.nav-link:hover {
+  background-color: rgb(180, 0, 126); /* Change background color on hover */
+  color: rgb(0, 0, 0); /* Change text color on hover */
+  text-decoration: none; /* Remove underlines on hover */
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(45deg, #ff36ee, #ff009d); /* Apply gradient background to navbar */
+  background-size: 400% 400%; /* Add animated gradient background */
+  animation: gradient 15s ease infinite; /* Apply background animation */
+  color: #ffffff; /* Set text color to white */
+}
+
+/* Add this CSS for the logo */
+.logo {
+    max-width: 25%; /* Adjust the max-width to your desired size */
+    height: auto;
+  }  
+
+/* Navbar brand styles */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Set navbar brand text color to white */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Navbar toggler icon */
+.navbar-light .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+/* Navbar links styles */
+.navbar-nav .nav-link {
+  color: white !important; /* Set the nav links color to white */
+}
+
+/* Header with video background styles */
+.bgimg-1 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Video background styles */
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+/* Header content styles */
+.header-content {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Set text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+/* Header text styles */
+.bgimg-1 h1,
+.bgimg-1 p,
+.bgimg-1 .btn {
+  color: #ffffff; /* Set text color to white */
+}
+
+/* About section styles */
+#about {
+  background-color: #000000; /* Set section background to black */
+  padding: 50px 0;
+}
+
+/* About section heading styles */
+h3 {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin: 5px; 
+  font-size: larger;
+}
+
+
+/* Video and text section styles */
+#video-text-section {
+  background-color: #000000; /* Set section background to black */
+  color: #ffffff; /* Set text color to white */
+  padding: 50px 0;
+}
+
+/* Video in the video-text-section styles */
+#video-text-section video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text in the video-text-section styles */
+#video-text-section-text {
+  padding: 20px;
+}
+
+/* Hide the page content initially */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glitch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logoo.png" alt="snake logo" class="logo">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#video-text-section">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="work.html">WORK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header with full-height video background -->
+<header class="bgimg-1 h-screen relative">
+    <video autoplay muted loop id="video-background" class="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="img/video2.mp4" type="video/mp4"> <!-- Updated video source -->
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center z-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-3xl lg:text-5xl text-white font-bold leading-tight mb-4">
+                        " Navigating Excellence, Embracing Elegance "
+                    </h1>
+                    <p class="text-base lg:text-lg text-white">
+                Commitment to turning challenges into opportunities and delivering exceptional web experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<br>
+
+<!-- New Section with Images -->
+<section id="image-gallery" style="position: relative; overflow: hidden; background: url('img/video2.mp4'); background-size: cover; color: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="img/p3.jpg" alt="Image 1" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+                <img src="img/p2.jpg" alt="Image 2" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+                <img src="img/p1.jpg" alt="Image 3" class="img-fluid">
+            </div>
+        </div>
+        <br>
+        <h3>In the halls of Medan State University, a group of friends shared a common fascination with technology and creativity. In 2023, they came together to create "Glitch," a web design company that would rewrite the rules of web design.
+
+            Starting with modest local projects, "Glitch" quickly gained a reputation for its innovative blend of tech know-how and artistic vision. They balanced their studies at the university with their growing company, fueling each other's passion.
+            
+            Today, "Glitch" proudly carries the legacy of their friendship and the spirit of Medan State University, where they learned to push the boundaries and transform glitches into digital masterpieces.</h3>
+    </div>
+</section>
+
+<p></p>
+
+<!-- New Section with Video and Text -->
+<section id="video-text-section" style="position: relative; overflow: hidden; background: url('img/video2.mp4'); background-size: cover; color: #ffffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <video autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-lg-6" id="video-text-section-text">
+          <h1><strong>ABOUT US</strong></h1>
+          <br>
+          <p>
+            Glitch is a company made by passionate team of students hailing from Medan State University, 
+            driven by a shared enthusiasm for web design and development. We have united 
+            our diverse talents and creative minds to embark on a journey to reshape the 
+            digital world. Our mission is to revolutionize web design, break free from 
+            the ordinary, and make the web a more vibrant and innovative place.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Bootstrap JavaScript and Popper.js (required for some Bootstrap features) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com"></script>
+<!-- JavaScript to trigger the fade-in animation -->
+<script>
+    window.addEventListener('load', function () {
+      // Wait for the page to load completely, then fade in the content
+      document.body.style.opacity = '1';
+    });
+</script>
+</body>
+</html>
+
+
